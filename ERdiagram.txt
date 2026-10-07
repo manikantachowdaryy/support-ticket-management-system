@@ -1,0 +1,32 @@
+ROLES
+  │
+  │ 1
+  │
+  │ *
+USERS
+  │
+  ├───────────────┐
+  │               │
+  │               │
+  ▼               ▼
+TICKETS       REFRESH_TOKENS
+  │
+  ├───────────────┐
+  │               │
+  ▼               ▼
+COMMENTS      ATTACHMENTS
+  │
+  │
+  ▼
+USERS
+
+TICKETS ──────── TICKET_STATUS_HISTORY
+   │
+   │
+   ├──────────── NOTIFICATIONS
+   │
+   ▼
+TICKET_CATEGORIES
+
+USERS ────────── NOTIFICATIONS
+USERS ────────── AUDIT_LOGS

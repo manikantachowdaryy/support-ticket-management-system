@@ -1,0 +1,60 @@
+# Support Ticket Management System
+
+A full-stack Support Ticket Management System built with **FastAPI, PostgreSQL, SQLAlchemy, Alembic, React, and TypeScript**.
+
+The system provides role-based access control for **Admins, Support Agents, and Customers**, along with ticket management, assignment, status workflows, comments, attachments, notifications, SLA tracking, dashboards, and audit logging.
+
+---
+
+## Table of Contents
+
+- [Project Overview](#project-overview)
+- [Features](#features)
+- [User Roles](#user-roles)
+- [Technology Stack](#technology-stack)
+- [Project Architecture](#project-architecture)
+- [Project Structure](#project-structure)
+- [Database Design](#database-design)
+- [Authentication & Authorization](#authentication--authorization)
+- [Ticket Workflow](#ticket-workflow)
+- [SLA Management](#sla-management)
+- [API Overview](#api-overview)
+- [Environment Setup](#environment-setup)
+- [Backend Setup](#backend-setup)
+- [Database Migration](#database-migration)
+- [Seed Data](#seed-data)
+- [Running the Backend](#running-the-backend)
+- [Frontend Setup](#frontend-setup)
+- [Running the Frontend](#running-the-frontend)
+- [Testing](#testing)
+- [API Documentation](#api-documentation)
+- [Postman](#postman)
+- [Security](#security)
+- [Error Handling](#error-handling)
+- [Future Enhancements](#future-enhancements)
+- [Project Status](#project-status)
+
+---
+
+# Project Overview
+
+The Support Ticket Management System is designed to manage customer support requests through a centralized ticketing platform.
+
+Customers can create and track their support tickets.
+
+Support Agents can view assigned tickets, update ticket status, communicate with customers, and manage ticket resolution.
+
+Administrators have complete control over users, tickets, categories, assignments, audit logs, and system-level operations.
+
+The application follows a layered backend architecture:
+
+```text
+Routes
+   ↓
+Dependencies / Authorization
+   ↓
+Services
+   ↓
+SQLAlchemy
+   ↓
+PostgreSQL
